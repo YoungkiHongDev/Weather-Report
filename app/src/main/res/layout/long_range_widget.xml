@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/long_range_widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ff0000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="4dp">
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/gps_icon"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/long_gugun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지역구 지역동"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/long_day0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="월요일"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/long_day1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="화요일"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/long_day2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="수요일"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/long_day3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="목요일"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/long_day4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="금요일"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/long_weather0"
+            android:src="@drawable/sunny"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <ImageView
+            android:id="@+id/long_weather1"
+            android:src="@drawable/sunny"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <ImageView
+            android:id="@+id/long_weather2"
+            android:src="@drawable/sunny"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <ImageView
+            android:id="@+id/long_weather3"
+            android:src="@drawable/sunny"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <ImageView
+            android:id="@+id/long_weather4"
+            android:src="@drawable/sunny"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="업데이트 시간 : "
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/long_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000/00/00 00:00"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"/>
+        <ImageView
+            android:id="@+id/long_refresh"
+            android:layout_marginLeft="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/refresh_icon"/>
+    </LinearLayout>
+</LinearLayout>
